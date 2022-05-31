@@ -22,6 +22,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 // import AllUsers from "../screens/AllUsers";
 // import NavigationFooter from "../components/NavigationFooter";
 // import Init from "../screens/Init";
+
+// ------------------User Screens------------------
 import UserSelectedPlatform from "../screens/User/UserSelectedPlatform";
 import UserWelcomeScreen from "../screens/User/UserWelcomeScreen";
 import UserWelcomeScreenTwo from "../screens/User/UserWelcomeScreenTwo";
@@ -29,6 +31,9 @@ import UserOTPVerifyScreen from "../screens/User/UserOTPVerifyScreen";
 import UserAllPlatformsScreen from "../screens/User/UserAllPlatformsScreen";
 import UserRegisterScreen from "../screens/User/UserRegisterScreen";
 import UserWebViewScreen from "../screens/User/UserWebViewScreen";
+
+// ------------------Admin Screens------------------
+import AdminLoginScreen from "../screens/Admin/AdminLoginScreen";
 
 // const Register = createStackNavigator();
 // const RegisterStack = () => {
@@ -54,21 +59,8 @@ const Stack = createStackNavigator();
 const RootStack = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      {/*
-        /* <Stack.Screen name="UserQrScanScreen" component={UserQrScanScreen} /> 
-        <Stack.Screen
-          name="UserRegisterScreen"
-          component={UserRegisterScreen}
-        />
-      */}
-      {/* <Stack.Screen name="Init" component={Init} /> */}
-      {/* <Stack.Screen
-        name="FirebetLoadingScreen"
-        component={FirebetLoadingScreen}
-      /> */}
       {/* ------------------User Screens------------------ */}
-
-      <Stack.Screen name="UserWelcomeScreen" component={UserWelcomeScreen} />
+      {/* <Stack.Screen name="UserWelcomeScreen" component={UserWelcomeScreen} />
       <Stack.Screen
         name="UserWelcomeScreenTwo"
         component={UserWelcomeScreenTwo}
@@ -86,20 +78,14 @@ const RootStack = () => {
         name="UserSelectedPlatform"
         component={UserSelectedPlatform}
       />
-      <Stack.Screen name="UserWebViewScreen" component={UserWebViewScreen} />
+      <Stack.Screen name="UserWebViewScreen" component={UserWebViewScreen} /> */}
       {/* <Stack.Screen name="UserScanCodeIntro" component={UserScanCodeIntro} />
-      
-      <Stack.Screen
-        name="UserAllPlatformsScreen"
-        component={UserAllPlatformsScreen}
-      />
-      */}
-      {/* Platform Screeen Here  */}
-      {/* <Stack.Screen name="UserWebViewScreen" component={UserWebViewScreen} /> */}
+       */}
       {/* ------------------Shop Screens------------------ */}
       {/* <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="DashBoard" component={DashBoard} /> */}
       {/* ------------------Admin Screens------------------ */}
+      <Stack.Screen name="AdminLoginScreen" component={AdminLoginScreen} />
       {/* <Stack.Screen name="AdminLogin" component={AdminLogin} />
       <Stack.Screen name="AdminDashboard" component={NavigationFooter} />
       <Stack.Screen name="SpecificShop" component={SpecificShop} /> */}

@@ -10,7 +10,7 @@ import {
 import SmallButton from "../../components/SmallButton";
 import colorsStyles from "../../styles/colors.styles";
 import HeaderFireOne from "../../components/HeaderFireOne";
-import NeuInput from "../../components/NeuInput";
+import InputField from "../../components/InputField";
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
@@ -83,7 +83,7 @@ const UserRegisterScreen = ({ navigation }) => {
     //         </Text>
     //       </View>
     //       <View style={{ top: "30%", alignItems: "center" }}>
-    //         <NeuInput placeholder="Enter Phone" />
+    //         <InputField placeholder="Enter Phone" />
     //       </View>
     //     </View>
     //     <View style={{ position: "absolute", top: "80%", alignSelf: "center" }}>
@@ -154,7 +154,7 @@ const UserRegisterScreen = ({ navigation }) => {
           </Text>
         </View>
         <View style={{ top: "30%", alignItems: "center" }}>
-          <NeuInput
+          <InputField
             placeholder="Enter Phone"
             isph={true}
             value={phoneNumber}
