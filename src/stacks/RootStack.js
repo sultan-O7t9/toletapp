@@ -60,7 +60,7 @@ const RootStack = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       {/* ------------------User Screens------------------ */}
-      {/* <Stack.Screen name="UserWelcomeScreen" component={UserWelcomeScreen} />
+      <Stack.Screen name="UserWelcomeScreen" component={UserWelcomeScreen} />
       <Stack.Screen
         name="UserWelcomeScreenTwo"
         component={UserWelcomeScreenTwo}
@@ -78,14 +78,14 @@ const RootStack = () => {
         name="UserSelectedPlatform"
         component={UserSelectedPlatform}
       />
-      <Stack.Screen name="UserWebViewScreen" component={UserWebViewScreen} /> */}
+      <Stack.Screen name="UserWebViewScreen" component={UserWebViewScreen} />
       {/* <Stack.Screen name="UserScanCodeIntro" component={UserScanCodeIntro} />
        */}
       {/* ------------------Shop Screens------------------ */}
       {/* <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="DashBoard" component={DashBoard} /> */}
       {/* ------------------Admin Screens------------------ */}
-      <Stack.Screen name="AdminLoginScreen" component={AdminLoginScreen} />
+      {/* <Stack.Screen name="AdminLoginScreen" component={AdminLoginScreen} /> */}
       {/* <Stack.Screen name="AdminLogin" component={AdminLogin} />
       <Stack.Screen name="AdminDashboard" component={NavigationFooter} />
       <Stack.Screen name="SpecificShop" component={SpecificShop} /> */}

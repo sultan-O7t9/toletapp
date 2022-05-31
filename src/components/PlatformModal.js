@@ -1,6 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import colorsStyles from "../styles/colors.styles";
 // import { color } from 'react-native-reanimated'
 import PlatformListItem from "./PlatformListItem";
 const PlatformModal = props => {
@@ -20,7 +21,7 @@ const PlatformModal = props => {
             style={{
               fontSize: 23,
               marginTop: 20,
-              color: titlecolor,
+              color: colorsStyles.CLR_WHITE,
             }}
           >
             {props.name}
