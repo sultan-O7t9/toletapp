@@ -19,7 +19,7 @@ const ShopName = props => {
   return (
     <TouchableOpacity
       onPress={() => {
-        navigation.navigate("SpecificShop", { id: props.id });
+        navigation.navigate("AdminShopDetailScreen", { id: props.id });
       }}
     >
       <View

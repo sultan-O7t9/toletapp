@@ -18,6 +18,7 @@ import AdminDashboardScreen from "../screens/Admin/AdminDashboardScreen";
 // import HeaderBet365 from "./HeaderBet365";
 
 import Icon from "react-native-vector-icons/MaterialIcons";
+import AdminShopDetailScreen from "../screens/Admin/AdminShopDetailScreen";
 // import AdminDashboardScreen from "../screens/AdminDashboardScreen";
 // import AdminShopListScreen from "../screens/AdminShopListScreen";
 // import AdminRegisterShopScreen from "../screens/AdminRegisterShopScreen";
@@ -179,7 +180,7 @@ const MyTabs = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Screen5"
         component={Screen5}
         options={{
@@ -198,6 +199,28 @@ const MyTabs = () => {
             </View>
           ),
         }}
+      /> */}
+      <Tab.Screen
+        name="AdminShopDetailScreen"
+        component={AdminShopDetailScreen}
+        // options={{
+        //   tabBarIcon: ({ focused }) => (
+        //     <View style={{ justifyContent: "center", alignItems: "center" }}>
+        //       <Icon
+        //         name="home"
+        //         size={30}
+        //         color="#900"
+        //         style={{
+        //           //alignSelf:'center',
+        //           //justifyContent:'center',
+        //           // width: "100%",
+        //           //height: "100%",
+        //           color: focused ? "orange" : "white",
+        //         }}
+        //       />
+        //     </View>
+        //   ),
+        // }}
       />
     </Tab.Navigator>
   );
