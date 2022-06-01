@@ -33,7 +33,7 @@ const UserWelcomeScreenTwo = ({ navigation }) => {
         <ButtonCTA
           title={"Continue"}
           onPress={() => {
-            navigation.navigate("UserRegisterScreen");
+            navigation.navigate("UserLoginScreen");
           }}
         />
       </View>

@@ -34,6 +34,8 @@ import UserWebViewScreen from "../screens/User/UserWebViewScreen";
 
 // ------------------Admin Screens------------------
 import AdminLoginScreen from "../screens/Admin/AdminLoginScreen";
+import UserLoginScreen from "../screens/User/UserLoginScreen";
+import UserRegisterDetailsScreen from "../screens/User/UserRegisterDetailsScreen";
 
 // const Register = createStackNavigator();
 // const RegisterStack = () => {
@@ -66,6 +68,12 @@ const RootStack = () => {
         component={UserWelcomeScreenTwo}
       />
       <Stack.Screen name="UserRegisterScreen" component={UserRegisterScreen} />
+      <Stack.Screen
+        name="UserRegisterDetailsScreen"
+        component={UserRegisterDetailsScreen}
+      />
+      <Stack.Screen name="UserLoginScreen" component={UserLoginScreen} />
+
       <Stack.Screen
         name="UserOTPVerifyScreen"
         component={UserOTPVerifyScreen}

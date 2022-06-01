@@ -29,17 +29,17 @@ const UserAllPlatformsScreen = ({ navigation }) => {
     },
     {
       platformName: "MrGreen2",
-      platformURL: "",
+      platformURL: "https://www.mrgreen.com/",
       platformImg: require("../../assets/images/logoMrGreen.png"),
     },
     {
       platformName: "MrGreen3",
-      platformURL: "",
+      platformURL: "https://www.mrgreen.com/",
       platformImg: require("../../assets/images/logoMrGreen.png"),
     },
     {
       platformName: "MrGreen4",
-      platformURL: "",
+      platformURL: "https://www.mrgreen.com/",
       platformImg: require("../../assets/images/logoMrGreen.png"),
     },
   ];

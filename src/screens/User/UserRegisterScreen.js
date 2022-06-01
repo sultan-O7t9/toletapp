@@ -14,6 +14,7 @@ import InputField from "../../components/InputField";
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import { TouchableOpacity } from "react-native";
 
 const UserRegisterScreen = ({ navigation }) => {
   // const [render, setRender] = useState(<PreLoader />);
@@ -166,7 +167,7 @@ const UserRegisterScreen = ({ navigation }) => {
       </View>
       <View style={{ position: "absolute", top: "80%", alignSelf: "center" }}>
         <SmallButton
-          title="LOG IN"
+          title="REGISTER"
           //   isDisabled={isDisabled || isLoading}
           onPress={() => {
             setIsLoading(true);
@@ -198,6 +199,30 @@ const UserRegisterScreen = ({ navigation }) => {
             //   });
           }}
         />
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate("UserLoginScreen");
+          }}
+        >
+          <View
+            style={{
+              marginTop: 30,
+              width: "100%",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Text
+              style={{
+                fontWeight: "bold",
+                fontSize: 18,
+                color: colorsStyles.CLR_PRIMARY,
+              }}
+            >
+              Already Registered? Log In
+            </Text>
+          </View>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

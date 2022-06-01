@@ -66,7 +66,7 @@ const OTPVerifyScreen = ({ navigation, route }) => {
         setTimer(timer - 1);
       } else if (timer == 0) {
         console.log("object");
-        navigation.navigate("UserAllPlatformsScreen");
+        navigation.navigate("UserRegisterDetailsScreen");
       }
     }, 1000);
   }, [timer]);
