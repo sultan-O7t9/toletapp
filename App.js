@@ -9,6 +9,7 @@ export default function App() {
     "Acme-Regular": require("./src/assets/fonts/Acme-Regular.ttf"),
     "Inter-Regular": require("./src/assets/fonts/Inter-Regular.ttf"),
     "Adamina-Regular": require("./src/assets/fonts/Adamina-Regular.ttf"),
+    "Poppins-Medium": require("./src/assets/fonts/Poppins-Medium.ttf"),
   });
 
   if (!fontsLoaded) {

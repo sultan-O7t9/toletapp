@@ -10,8 +10,8 @@ import {
 // import ButtonCTA from "../components/ButtonCTA";
 // import colorsStyles from "../styles/colors.styles";
 // import HeaderFireOne from "../components/HeaderFireOne";
-// import InputField from "../components/InputField";
-// import SmallButton from "../components/SmallButton";
+import InputField from "../../components/InputField";
+import SmallButton from "../../components/SmallButton";
 import { useState } from "react";
 // import { useDispatch } from "react-redux";
 // import { setAuthToken, setisAdminVerifiedR } from "../store/reducers/authSlice";
@@ -66,25 +66,29 @@ const AdminLoginScreen = ({ navigation }) => {
           alignSelf: "center",
         }}
       >
-        <InputField placeholder="Email" value={email} setValue={setEmail} />
+        <View style={{ marginBottom: 32 }}>
+          <InputField placeholder="Email" value={email} setValue={setEmail} />
+        </View>
+
         <InputField
           placeholder="Password"
           secureTextEntry={true}
           value={password}
           setValue={setPassword}
         />
-        <View style={{ marginTop: "10%" }}>
+        <View style={{ marginTop: 48 }}>
           <SmallButton
-            isDisabled={!email || !password || isDisabled}
+            // isDisabled={!email || !password || isDisabled}
             onPress={() => {
+              navigation.navigate("AdminDashboardScreen");
               // StoreData();
               // return true;
 
-              setIsDisabled(true);
-              console.log("object");
+              // setIsDisabled(true);
+              // console.log("object");
               //   console.log(URL);
-              const admin = { email: email.trim(), passwd: password };
-              console.log(admin);
+              // const admin = { email: email.trim(), passwd: password };
+              // console.log(admin);
               //   console.log(`${URL}/api/admin/login`);
               //   axios
               //     .post(`${URL}/api/admin/login`, admin)

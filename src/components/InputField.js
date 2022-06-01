@@ -9,11 +9,20 @@ import {
 } from "react-native";
 import React from "react";
 import colorsStyles from "../styles/colors.styles";
+import { useWindowDimensions } from "react-native";
 // import PhoneInput from "react-native-phone-input";
 // import InputPhone from "./InputPhone";
 // import { isValidNumber } from "react-native-phone-number-input";
 
 const InputField = props => {
+  const dimensions = {
+    width: useWindowDimensions().width,
+    height: useWindowDimensions().height,
+  };
+  const input = {
+    width: dimensions.width * 0.81,
+    height: 56,
+  };
   return (
     <View>
       {
@@ -58,10 +67,11 @@ const InputField = props => {
             props.setValue(txt);
           }}
           style={{
-            paddingLeft: 12,
-            backgroundColor: colorsStyles.CLR_PRIMARY,
+            width: input.width,
+            padding: 12,
+            backgroundColor: colorsStyles.CLR_WHITE,
             borderRadius: 8,
-            borderWidth: 2,
+            borderWidth: 1,
             borderColor: colorsStyles.CLR_PRIMARY,
             color: "#000",
           }}
