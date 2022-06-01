@@ -39,6 +39,8 @@ import AdminShopListScreen from "../screens/Admin/AdminShopListScreen";
 import AdminRegisterShopScreen from "../screens/Admin/AdminRegisterShopScreen";
 import AdminUserSummaryScreen from "../screens/Admin/AdminUserSummaryScreen";
 import AdminBottomNavigation from "../navigations/AdminBottomNavigation";
+import ShopLoginScreen from "../screens/Shop/ShopLoginScreen";
+import ShopDashboardScreen from "../screens/Shop/ShopDashboardScreen";
 
 // const Register = createStackNavigator();
 // const RegisterStack = () => {
@@ -87,10 +89,15 @@ const RootStack = () => {
       {/* <Stack.Screen name="UserScanCodeIntro" component={UserScanCodeIntro} />
        */}
       {/* ------------------Shop Screens------------------ */}
+      <Stack.Screen name="ShopLoginScreen" component={ShopLoginScreen} />
+      <Stack.Screen
+        name="ShopDashboardScreen"
+        component={ShopDashboardScreen}
+      />
       {/* <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="DashBoard" component={DashBoard} /> */}
       {/* ------------------Admin Screens------------------ */}
-      <Stack.Screen name="AdminLoginScreen" component={AdminLoginScreen} />
+      {/* <Stack.Screen name="AdminLoginScreen" component={AdminLoginScreen} />
       <Stack.Screen
         name="AdminDashboardScreen"
         component={AdminBottomNavigation}
@@ -106,7 +113,7 @@ const RootStack = () => {
       <Stack.Screen
         name="AdminUserSummaryScreen"
         component={AdminUserSummaryScreen}
-      />
+      /> */}
 
       {/* <Stack.Screen name="AdminLogin" component={AdminLogin} />
       <Stack.Screen name="AdminDashboard" component={NavigationFooter} />
