@@ -44,8 +44,9 @@ const ShopLoginScreen = ({ navigation }) => {
           alignItems: "center",
         }}
       >
-        <InputField placeholder="Email" value={email} setValue={setEmail} />
-
+        <View style={{ marginBottom: 20 }}>
+          <InputField placeholder="Email" value={email} setValue={setEmail} />
+        </View>
         <InputField
           placeholder="Password"
           secureTextEntry={true}

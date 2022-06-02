@@ -16,6 +16,8 @@ import CircularProgressBar from "../../components/CircularProgressBar";
 // import Modal from "../components/Modal";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 // import PreLoader from "../components/PreLoader";
 // import LogoutBtn from "../components/LogoutBtn";
 // import axios from "axios";
@@ -24,6 +26,7 @@ import { useEffect } from "react";
 const ShopDashboardScreen = () => {
   const [qrModal, setQrModal] = useState(false);
   const [shopID, setShopID] = useState("");
+  const navigation = useNavigation();
   //   const getData = async () => {
   //     try {
   //       const shopID = await AsyncStorage.getItem("shopID");
@@ -37,11 +40,11 @@ const ShopDashboardScreen = () => {
 
   //   const [users, setUsers] = useState([]);
   const users = [
-    { uname: "user_id 1", is_online: 1 },
-    { uname: "user_id 2", is_online: 1 },
-    { uname: "user_id 3", is_online: 1 },
-    { uname: "user_id 4", is_online: 1 },
-    { uname: "user_id 5", is_online: 1 },
+    { uname: "ad_id 1", is_online: 1 },
+    { uname: "ad_id 2", is_online: 1 },
+    { uname: "ad_id 3", is_online: 0 },
+    { uname: "ad_id 4", is_online: 0 },
+    { uname: "ad_id 5", is_online: 1 },
   ];
   const [render, setRender] = useState("");
 
@@ -103,16 +106,44 @@ const ShopDashboardScreen = () => {
           >
             <CircularProgressBar />
           </View>
+          <View style={{ top: "7%", left: "37%" }}>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("ShopEditAdScreen");
+              }}
+            >
+              <View
+                style={{
+                  width: 75,
+                  height: 75,
+                  borderRadius: 150 / 2,
+
+                  backgroundColor: colorsStyles.CLR_PRIMARY,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Image
+                  source={require("../../assets/images/plus.png")}
+                  style={{
+                    width: 30,
+                    height: 30,
+                  }}
+                />
+              </View>
+            </TouchableOpacity>
+          </View>
         </View>
 
         <View style={{ height: "35%", top: "3%" }}>
           <FlatList
             // horizontal
             data={users}
-            renderItem={({ item }) => (
+            renderItem={({ item, index }) => (
               <UserListItem
+                key={item.uname + index}
                 id={item.uname}
-                status={item.is_online == 1 ? "Online" : "Offline"}
+                status={item.is_online == 1 ? "Active" : "Booked"}
               />
             )}
             keyExtractor={item => item.uname}

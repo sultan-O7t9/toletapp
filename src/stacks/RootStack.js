@@ -41,6 +41,7 @@ import AdminUserSummaryScreen from "../screens/Admin/AdminUserSummaryScreen";
 import AdminBottomNavigation from "../navigations/AdminBottomNavigation";
 import ShopLoginScreen from "../screens/Shop/ShopLoginScreen";
 import ShopDashboardScreen from "../screens/Shop/ShopDashboardScreen";
+import ShopEditAdScreen from "../screens/Shop/ShopEditAdScreen";
 
 // const Register = createStackNavigator();
 // const RegisterStack = () => {
@@ -94,6 +95,7 @@ const RootStack = () => {
         name="ShopDashboardScreen"
         component={ShopDashboardScreen}
       />
+      <Stack.Screen name="ShopEditAdScreen" component={ShopEditAdScreen} />
       {/* <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="DashBoard" component={DashBoard} /> */}
       {/* ------------------Admin Screens------------------ */}
