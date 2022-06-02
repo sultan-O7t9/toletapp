@@ -213,26 +213,25 @@ const AdminRegisterShopScreen = () => {
         </View>
         <View style={{ top: keyboardStatus ? "4%" : "12%" }}>
           <InputField
-            placeholder="VID Number"
-            tile="VID Number"
-            keyboardType="numeric"
-            value={VID}
-            setValue={setVID}
-          />
-        </View>
-        <View style={{ top: keyboardStatus ? "6%" : "16%" }}>
-          <InputField
             placeholder="Email"
             tile="Email"
             value={Email}
             setValue={setEmail}
           />
         </View>
+        <View style={{ top: keyboardStatus ? "6%" : "16%" }}>
+          <InputField
+            placeholder="Password"
+            tile="Password"
+            // keyboardType="numeric"
+            value={VID}
+            setValue={setVID}
+          />
+        </View>
         <View style={{ top: keyboardStatus ? "8%" : "20%" }}>
           <InputField
-            placeholder="Bank Account Number"
-            tile="Bank Account Number"
-            keyboardType="numeric"
+            placeholder="Title"
+            tile="Title"
             value={AccountNo}
             setValue={setAccountNo}
           />

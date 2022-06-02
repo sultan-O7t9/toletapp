@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "toletapp Admin",
-    "slug": "toletapp",
+    "slug": "toletappadmin",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/app-icon.png",
@@ -9,14 +9,12 @@
     "splash": {
       "image": "./assets/app-splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#F8F8F8"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -25,7 +23,7 @@
         "foregroundImage": "./assets/app-adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.toletapp.admin"
+      "package": "com.toletappadmin.adminadmin"
     },
     "web": {
       "favicon": "./assets/app-favicon.png"
